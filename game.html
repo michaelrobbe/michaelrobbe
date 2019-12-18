@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dig</title>
+	<script src="game.js"></script>
+<style>
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #222;
+	color: #ddd;
+	font-family: helvetica;
+}
+button {
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	border: none;
+	background-color: #ddd;
+	font-size: 1rem;
+}
+
+#upgrades {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+
+</style>
+</head>
+<body>
+	<div id="player">
+		<div id="depth">
+			<h1>Depth:<span class="value">0</span><span class="quantifier">cm</span></h1>
+		</div>
+		<div id="gold">
+			<h1>Gold:<span class="value">0</span><span class="quantifier">g</span></h1>
+		</div>
+	</div>
+	<div id="dirt">
+		<h1>Dirt:<span class="value">0</span><span class="quantifier"></span></h1>
+		<button id="dig">Dig</button>
+		<button id="sell">Sell (10:1)</button>
+	</div>
+
+	<div id="upgrades">
+		<button id="shovel_upgrade">Upgrade Shovel (5g)</button>
+	</div>
+
+	<script type="text/javascript">
+		var g = new Game();
+	</script>
+</body>
+</html>
